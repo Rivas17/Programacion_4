@@ -13,7 +13,6 @@ class Cliente:
     def nombre(self):
         return self.__nombre
     
-    
     @property
     def cedula(self):
         return self.__cedula
