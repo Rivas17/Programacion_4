@@ -11,14 +11,7 @@ class HospitalController:
         if self.hospital is None:
             self.hospital = Hospital(nombre)
             return f"Hospital '{nombre}' creado."
-        else:
-            if self.bloquear_campo_hospital:
-                return f"Hospital bloqueado '{self.hospital.nombre_hospital}'(no se puede cambiar)."
-            # else:
-            #     # Si ya existe, simplemente podrías actualizar el nombre si fuera necesario.
-            #     self.hospital.hospital_name = hospital_name
-            #     return f"Hospital actualizado a '{hospital_name}'."
-    
+            
     def bloquear_hospital(self):
         self.bloquear_campo_hospital = True
 
